@@ -4,6 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WebDev3</title>
+    <style>/* stylelint-disable selector-list-comma-newline-after */
+
+      .blog-header {
+        border-bottom: 1px solid #e5e5e5;
+      }
+      
+      .blog-header-logo {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+        font-size: 2.25rem;
+      }
+      
+      .blog-header-logo:hover {
+        text-decoration: none;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+      }
+      
+      .display-4 {
+        font-size: 2.5rem;
+      }
+      @media (min-width: 768px) {
+        .display-4 {
+          font-size: 3rem;
+        }
+      }
+      
+      .flex-auto {
+        flex: 0 0 auto;
+      }
+      
+      .h-250 { height: 250px; }
+      @media (min-width: 768px) {
+        .h-md-250 { height: 250px; }
+      }
+      
+      /* Pagination */
+      .blog-pagination {
+        margin-bottom: 4rem;
+      }
+      
+      /*
+       * Blog posts
+       */
+      .blog-post {
+        margin-bottom: 4rem;
+      }
+      .blog-post-title {
+        font-size: 2.5rem;
+      }
+      .blog-post-meta {
+        margin-bottom: 1.25rem;
+        color: #727272;
+      }
+      
+      /*
+       * Footer
+       */
+      .blog-footer {
+        padding: 2.5rem 0;
+        color: #727272;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-top: .05rem solid #e5e5e5;
+      }
+      .blog-footer p:last-child {
+        margin-bottom: 0;
+      }
+      </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
@@ -11,34 +81,34 @@
       <header class="blog-header lh-1 py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
-            <a class="link-secondary" href="#">Subscribe</a>
+            <a class="link-secondary" href="#">Abonelik</a>
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="#">Large</a>
+            <a class="blog-header-logo text-dark" href="#">Büyük</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="link-secondary" href="#" aria-label="Search">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Üye Ol</a>
           </div>
         </div>
       </header>
     
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
-          <a class="p-2 link-secondary" href="#">World</a>
-          <a class="p-2 link-secondary" href="#">U.S.</a>
-          <a class="p-2 link-secondary" href="#">Technology</a>
-          <a class="p-2 link-secondary" href="#">Design</a>
-          <a class="p-2 link-secondary" href="#">Culture</a>
-          <a class="p-2 link-secondary" href="#">Business</a>
-          <a class="p-2 link-secondary" href="#">Politics</a>
-          <a class="p-2 link-secondary" href="#">Opinion</a>
-          <a class="p-2 link-secondary" href="#">Science</a>
-          <a class="p-2 link-secondary" href="#">Health</a>
-          <a class="p-2 link-secondary" href="#">Style</a>
-          <a class="p-2 link-secondary" href="#">Travel</a>
+          <a class="p-2 link-secondary" href="#">Dünya</a>
+          <a class="p-2 link-secondary" href="#">Birleşik Devletler</a>
+          <a class="p-2 link-secondary" href="#">Teknoloji</a>
+          <a class="p-2 link-secondary" href="#">Tasarım</a>
+          <a class="p-2 link-secondary" href="#">KÜltür</a>
+          <a class="p-2 link-secondary" href="#">İş</a>
+          <a class="p-2 link-secondary" href="#">Politika</a>
+          <a class="p-2 link-secondary" href="#">Fikir</a>
+          <a class="p-2 link-secondary" href="#">Bilim</a>
+          <a class="p-2 link-secondary" href="#">Sağlık</a>
+          <a class="p-2 link-secondary" href="#">Stil</a>
+          <a class="p-2 link-secondary" href="#">Seyehat</a>
         </nav>
       </div>
     </div>
